@@ -10,11 +10,13 @@
   <header>
     <h1>INFORM-<span>ME</span></h1>
   </header>
-  <div class="inverse">
-    <a href="formulaire.html"><BUtton class="b1">INSCRIPTION</BUtton></a>
-    <a href="login.html"><BUtton class="b2">CONNEXION</BUtton></a>
+  <div class="container"id="signup">
+  <div class="inverse" id="inverrseid">
+    <a class="b1" href="#signup"><BUtton >INSCRIPTION</BUtton></a>
+    <a class="b2" href="#signin" onclick="sign()"><BUtton >CONNEXION</BUtton></a>
   </div>
-  <div class="info">
+  <!--sign-up-->
+  <div class="info" >
     <form action="">
         <fieldset>
             <h2>Fiche de renseignement</h2>
@@ -78,6 +80,21 @@
             <input type="submit" value="Enregistrer">
         </fieldset>
     </form>
+</div>
+</div>
+<!--login-->
+<div class="login" id="signin" style="display: none;" >
+  <form action="">
+    <fieldset>
+        <h2>CONNEXION</h2>
+        <label for="log">Login</label>
+        <input type="text" name="log" id="log"><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+        <a href="#signup" onclick="signp()">Creer un compte</a>
+        <input type="submit" value="Envoyer">
+    </fieldset>
+  </form>
 </div>
 <script src="form.js"></script>
 </body>

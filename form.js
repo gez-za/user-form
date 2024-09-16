@@ -8,8 +8,6 @@ fileInput.addEventListener('change', function(event) {
         reader.onload = function(e) {
             imagePreview.src = e.target.result;
             imagePreview.style.display = 'block';
-           /* imagePreview.style.width='100px';
-            imagePreview.style.height='100px';*/
         }
         reader.readAsDataURL(file);
     }
@@ -26,3 +24,19 @@ fileInput.addEventListener('change', function(event) {
             choixfait.style.display='none';
         }
     });
+    function sign() {
+        const signup=document.getElementById("signup");
+        const login=document.getElementById("signin");
+        const inverse=document.getElementById("inverrseid");
+        login.style.display='block';
+        signup.style.display='none';
+        inverse.style.display='none';
+    }
+    function signp() {
+        const signup=document.getElementById("signup");
+        const login=document.getElementById("signin");
+        const inverse=document.getElementById("inverrseid");
+        login.style.display='none';
+        signup.style.display='block';
+        inverse.style.display='block';
+    }
