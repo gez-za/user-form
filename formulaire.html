@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de renseignement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>INFORM-<span>ME</span></h1>
+  </header>
+  <div class="inverse">
+    <a href="formulaire.html"><BUtton class="b1">INSCRIPTION</BUtton></a>
+    <a href="login.html"><BUtton class="b2">CONNEXION</BUtton></a>
+  </div>
+  <div class="info">
+    <form action="">
+        <fieldset>
+            <h2>Fiche de renseignement</h2>
+            <label for="fileInput" class="custom-file-upload">Ajouter une photo de profil</label>
+            <input type="file" id="fileInput" accept="image/*" required style="display:none;">
+            <br>
+            <div class="photo-frame">
+            <img id="imagePreview" class="preview" alt="Apercu de l'image" >
+            <br>
+            </div>
+            <div class="in">
+              
+              <label for="name">Nom</label>
+               <input type="text" name="name" id="name" placeholder="Entrer votre nom" required autocomplete="off"><br><br>
+               <label for="prename">Prenom</label>
+               <input type="text" name="prename" id="prename" placeholder="Entrer votre prenom" required autocomplete="off"><br><br>
+               <label for="sex">Sexe</label>
+               <select name="sex" id="sex" required aria-required="true">
+                <option value=""></option>
+                <option value="F">Femme</option>
+                <option value="H">Homme</option>
+               </select><br><br>
+           
+                <label for="dateN">Date de naissance</label>
+              <input type="date" name="dateN" id="dateN" placeholder="entrer votre date de naissance" required aria-required="true"><br><br>
+            
+                <label for="lieuN">Lieu de naissance</label>
+              <input type="text" name="lieuN" id="lieuN" placeholder="Entrer le lieu de naissance" required aria-required="true"><br><br>
+           
+                <label for="telP">Tel</label>
+              <input type="number" name="telP" id="telP" placeholder="Entrer le numero de tel" required aria-required="true"><br><br>
+           
+                <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Entrer l'Email" required aria-required="true"><br><br>
+           
+                <label for="nivE">Niveau d'etude</label>
+              <select name="nivE" id="nivE" required aria-required="true">
+                <option value="">votre niveau scolaire</option>
+                <option value="niv1">BACCALAUREAT</option>
+                <option value="niv2">BTS</option>
+                <option value="niv3">licence</option>
+                <option value="niv4">Master</option>
+                <option value="niv5">DOCTORAT</option>
+                <option value="niv6">Autres</option>
+              </select><br><br>
+              <div class="in" id="choixfait">
+                <label for="autres">Specifiez le niveau</label>  
+                <input type="text" name="autres" id="autres" placeholder="Entrer le niveau scolaire" required aria-required="true">
+              </div><br>
+           
+                <label for="SitM">Situation matrimoniale</label>
+                <select name="si" id="si" required aria-required="true">
+                    <option value="">votre statut</option>
+                    <option value="SM1">Marié (e)</option>
+                    <option value="SM2">Divorcé (e)</option>
+                    <option value="SM3">veuf (ve)</option>
+                    <option value="SM4">Celibataire</option>
+                </select><br><br>
+            </div>
+            <input type="button" value="Effacer">
+            <input type="submit" value="Enregistrer">
+        </fieldset>
+    </form>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
